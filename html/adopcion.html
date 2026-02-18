@@ -12,27 +12,70 @@
         <a href="quienesSomos.html">Quienes somos</a>
         <a href="reseñas.html">Reseñas</a>
     </nav>
-    <h1>Adopción</h1>
+    <h1 align="center">🐾 Proceso de Adopción 🐾</h1>
+    <h2 align="center">Dale una segunda oportunidad a un amigo</h2>
     <hr>
 </header>
 <body>
-    <div id="ubicacion">
-        <div id="ubicacion_descripcion">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, assumenda odio. Facilis quos ipsam, ex maiores, quae veritatis eos, 
-            <br>temporibus sapiente amet velit ullam aliquid reprehenderit deserunt atque. Provident, accusamus.
-        <div id="ubicacion_api">
+    <section id="requisitos">
+        <article>
+            <h3>Requisitos para una adopción responsable:</h3>
+            <p>Para asegurar el bienestar de nuestros peludos, solicitamos cumplir con lo siguiente:</p>
+            <ol>
+                <li>Ser mayor de edad (presentar identificación oficial).</li>
+                <li>Contar con un espacio seguro y adecuado para la mascota.</li>
+                <li>Comprobante de domicilio reciente en Uriangato o zonas aledañas.</li>
+                <li>Entrevista presencial con nuestro equipo de veterinarios.</li>
+                <li>Firma de una carta compromiso de cuidado y salud.</li>
+            </ol>
+        </article>
+    </section>
 
-        </div>
-        </div>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et quibusdam atque harum ipsam non i
-            <br>d? Esse enim velit ducimus sunt ea. Illo ipsa, ducimus nobis eum officiis corporis sint omnis!
-        </p>
-    </div> 
-    <hr>
-    <div id="mascotas">
+    <br>
 
-    </div>   
+    <section id="formulario_adopcion">
+        <fieldset>
+            <legend><strong>📩 Solicitud de Interés para Adopción 📩</strong></legend>
+            <p>Si estás interesado en alguno de nuestros rescatados, por favor llena este formulario y nos pondremos en contacto contigo:</p>
+            
+            <form action="#" method="post">
+                <p>
+                    <label for="nombre">Nombre completo:</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </p>
+
+                <p>
+                    <label for="telefono">Número de teléfono:</label><br>
+                    <input type="tel" id="telefono" name="telefono" placeholder="445 000 0000" required>
+                </p>
+
+                <p>
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" placeholder="usuario@correo.com" required>
+                </p>
+
+                <p>
+                    <label for="tamano">Tamaño de mascota que buscas:</label><br>
+                    <select id="tamano" name="tamano">
+                        <option value="pequeno">Pequeño (ej. Chihuahua)</option>
+                        <option value="mediano">Mediano (ej. Beagle)</option>
+                        <option value="grande">Grande (ej. Labrador)</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="motivo">¿Por qué deseas adoptar?</label><br>
+                    <textarea id="motivo" name="motivo" rows="4" cols="50" placeholder="Cuéntanos un poco sobre el hogar que ofrecerás..."></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="Enviar Solicitud">
+                    <input type="reset" value="Limpiar Formulario">
+                </p>
+            </form>
+        </fieldset>
+    </section>
+
 </body>
 <footer>
     <hr>
