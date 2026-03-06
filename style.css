@@ -84,7 +84,7 @@ h1, h2, h3, legend {
     color: #118ab2;
 }
 
-#nombre_vet hr {
+#comun {
     border: none;
     border-top: 4px dotted var(--color-nav);
     width: 200px;
@@ -106,4 +106,92 @@ h1, h2, h3, legend {
     border-radius: 25px;
     
     box-shadow: 5px 5px 0px rgba(173, 172, 172, 0.2);
+}
+
+#ubicacion {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#ubicacion fieldset {
+    background-color: var(--color-caja);
+    border: 4px dashed var(--color-acento); 
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 850px;
+    box-shadow: 8px 8px 0px rgba(0,0,0,0.05);
+}
+
+#ubicacion legend {
+    background-color: var(--color-nav);
+    color: var(--color-texto);
+    font-family: var(--fuente-schoolbell);
+    font-size: 1.6rem;
+    padding: 8px 25px;
+    border-radius: 15px;
+    border: 3px solid var(--color-texto); 
+    transform: rotate(-3deg);
+    box-shadow: 2px 3px 0px rgba(0,0,0,0.2);
+}
+
+#ubicacion article {
+    display: flex;
+    flex-direction: column; /* En móvil, se apilan verticalmente */
+    align-items: center;
+    gap: 40px;
+}
+
+.info-texto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-texto li {
+    background-color: #f0f8ff;
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border-left: 6px solid var(--color-nav);
+    font-weight: bold;
+}
+
+#ubicacion_satelite {
+    background: white;
+    padding: 10px 10px 25px 10px;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.1);
+    transform: rotate(4deg); 
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+#ubicacion_satelite:hover {
+    transform: scale(1.05) rotate(0deg);
+}
+
+#ubicacion_satelite img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    height: auto;
+}
+
+#ubicacion_satelite small {
+    display: block;
+    margin-top: 10px;
+    font-family: var(--fuente-titulos);
+    font-size: 1.2rem;
+    color: var(--color-texto);
+}
+
+footer{
+    margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+    #ubicacion article {
+        flex-direction: row;
+        align-items: flex-start;
+    }
 }
