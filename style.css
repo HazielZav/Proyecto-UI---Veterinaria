@@ -359,6 +359,108 @@ hr {
     flex: 1 1 45%; /* Hace que se acomoden en dos columnas en pantallas grandes */
 }
 
+/*Tipos de Servicios*/
+#contenido_servicios {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.tarjeta-servicios {
+    background-color: var(--color-caja);
+    border: 4px dashed var(--color-acento); /* Borde rosa sandía */
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 8px 8px 0px rgba(239, 71, 111, 0.2);
+    text-align: center;
+}
+
+.tarjeta-servicios h2 {
+    font-family: var(--fuente-titulos);
+    font-size: 1.8rem;
+    background-color: var(--color-nav);
+    color: var(--color-texto);
+    display: inline-block;
+    padding: 8px 25px;
+    border-radius: 15px;
+    border: 3px solid var(--color-texto);
+    margin-top: -55px; /* Lo subimos para que muerda el borde */
+    margin-bottom: 20px;
+    transform: rotate(2deg);
+    box-shadow: 2px 3px 0px rgba(0,0,0,0.15);
+}
+
+.tarjeta-servicios p {
+    margin-bottom: 25px;
+}
+
+.tarjeta-servicios table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 3px solid #118ab2; 
+    border-radius: 15px; 
+    overflow: hidden;
+    box-shadow: 4px 4px 0px rgba(17, 138, 178, 0.2);
+    margin: 0 auto;
+}
+
+.tarjeta-servicios caption {
+    font-family: var(--fuente-schoolbell);
+    font-size: 1.3rem;
+    color: #118ab2;
+    margin-bottom: 10px;
+}
+
+.tarjeta-servicios th, 
+.tarjeta-servicios td {
+    padding: 15px;
+    border-bottom: 1px solid #118ab2;
+    border-right: 1px solid #118ab2;
+}
+
+.tarjeta-servicios th:last-child, 
+.tarjeta-servicios td:last-child {
+    border-right: none;
+}
+
+.tarjeta-servicios tbody tr:last-child td,
+.tarjeta-servicios tfoot tr:last-child td {
+    border-bottom: none;
+}
+
+tarjeta-servicios thead th {
+    background-color: var(--color-nav);
+    font-size: 1.1rem;
+}
+
+.tarjeta-servicios tbody tr:nth-child(odd) {
+    background-color: #fdfaf6; /* Un crema muy suave */
+}
+
+.tarjeta-servicios tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.tarjeta-servicios tfoot td {
+    background-color: #f0f8ff; /* Azul muy clarito para el total */
+    border-top: 3px solid #118ab2;
+}
+
+.texto-derecha {
+    text-align: right;
+    padding-right: 20px !important;
+}
+
+/* Nota inferior */
+#nota_adicional {
+    text-align: center;
+    margin-top: -10px;
+    padding-bottom: 40px;
+}
+
 /*footer*/
 footer{
     margin-top: 30px;
