@@ -23,79 +23,78 @@
         <h2 align="center">Dale una segunda oportunidad a un amigo</h2>
         <hr id="comun">
     </section>
+    
     <section id="requisitos">
-        <article>
-            <h3>Requisitos para una adopción responsable:</h3>
-            <p>Para asegurar el bienestar de nuestros peludos, solicitamos cumplir con lo siguiente:</p>
-            <ol>
-                <li>Ser mayor de edad (presentar identificación oficial).</li>
-                <li>Contar con un espacio seguro y adecuado para la mascota.</li>
-                <li>Comprobante de domicilio reciente en Uriangato o zonas aledañas.</li>
-                <li>Entrevista presencial con nuestro equipo de veterinarios.</li>
-                <li>Firma de una carta compromiso de cuidado y salud.</li>
-            </ol>
-        </article>
-    </section>
+    <article class="tarjeta-adopcion">
+        <h3>Requisitos para una adopción responsable:</h3>
+        <p>Para asegurar el bienestar de nuestros peludos, solicitamos cumplir con lo siguiente:</p>
+        <ol>
+            <li>Ser mayor de edad (presentar identificación oficial).</li>
+            <li>Contar con un espacio seguro y adecuado para la mascota.</li>
+            <li>Comprobante de domicilio reciente en Uriangato o zonas aledañas.</li>
+            <li>Entrevista presencial con nuestro equipo de veterinarios.</li>
+            <li>Firma de una carta compromiso de cuidado y salud.</li>
+        </ol>
+    </article>
+</section>
 
-    <br>
+<section id="formulario_adopcion">
+    <fieldset>
+        <legend><strong>📩 Solicitud de Adopción 📩</strong></legend>
+        <p>Si estás interesado en alguno de nuestros rescatados, por favor llena este formulario y nos pondremos en contacto contigo:</p>
+        
+        <form action="procesar_adopcion.php" method="post">
+            <div class="campo-form">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+            </div>
 
-    <section id="formulario_adopcion">
-        <fieldset>
-            <legend><strong>📩 Solicitud de Interés para Adopción 📩</strong></legend>
-            <p>Si estás interesado en alguno de nuestros rescatados, por favor llena este formulario y nos pondremos en contacto contigo:</p>
-            
-            <form action="procesar_adopcion.php" method="post" id="formAdopcion">
-                <p>
-                    <label for="nombre">Nombre completo:</label><br>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
-                </p>
+            <div class="campo-form">
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="445 000 0000" required>
+            </div>
 
-                <p>
-                    <label for="telefono">Número de teléfono:</label><br>
-                    <input type="tel" id="telefono" name="telefono" placeholder="445 000 0000" required>
-                </p>
+            <div class="campo-form">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="usuario@correo.com" required>
+            </div>
 
-                <p>
-                    <label for="email">Correo electrónico:</label><br>
-                    <input type="email" id="email" name="email" placeholder="usuario@correo.com" required>
-                </p>
+            <div class="campo-form">
+                <label for="tamano">Tamaño de mascota que buscas:</label>
+                <select id="tamano" name="tamano">
+                    <option value="pequeno">Pequeño (ej. Chihuahua)</option>
+                    <option value="mediano">Mediano (ej. Beagle)</option>
+                    <option value="grande">Grande (ej. Labrador)</option>
+                </select>
+            </div>
 
-                <p>
-                    <label for="tamano">Tamaño de mascota que buscas:</label><br>
-                    <select id="tamano" name="tamano">
-                        <option value="pequeno">Pequeño (ej. Chihuahua)</option>
-                        <option value="mediano">Mediano (ej. Beagle)</option>
-                        <option value="grande">Grande (ej. Labrador)</option>
-                    </select>
-                </p>
+            <div class="campo-form">
+                <label for="motivo">¿Por qué deseas adoptar?</label>
+                <textarea id="motivo" name="motivo" rows="4" placeholder="Cuéntanos un poco sobre el hogar que ofrecerás..."></textarea>
+            </div>
 
-                <p>
-                    <label for="motivo">¿Por qué deseas adoptar?</label><br>
-                    <textarea id="motivo" name="motivo" rows="4" cols="50" placeholder="Cuéntanos un poco sobre el hogar que ofrecerás..."></textarea>
-                </p>
+            <div class="botones-form">
+                <input type="submit" value="Enviar Solicitud">
+                <input type="reset" value="Limpiar">
+            </div>
+        </form>
+    </fieldset>
+</section>
 
-                <p>
-                    <input type="submit" value="Enviar Solicitud">
-                    <input type="reset" value="Limpiar Formulario">
-                </p>
-            </form>
-        </fieldset>
-    </section>
     <hr>
     <footer>
-    
-    <div id="redesSociales" align="center">
-        <p>Síguenos en nuestras redes sociales:</p>
-        <nav>
-            <a href="https://facebook.com" target="_blank"><img src="../imagenes/facebook.png" alt="Facebook" width="30"></a>
-            <a href="https://instagram.com" target="_blank"><img src="../imagenes/instagram.png" alt="Instagram" width="30"></a>
-            <a href="mailto:contacto@patitasfelices.com"><img src="../imagenes/email.png" alt="Email" width="30"></a>
-            <a href="https://wa.me/1234567890" target="_blank"><img src="../imagenes/whatsapp.png" alt="WhatsApp" width="30"></a>
-        </nav>
-    </div>
-    <br>
-    <p align="center"><small>&copy; 2026 Veterinaria Patitas Felices - Todos los derechos reservados.</small></p>
-</footer>
+        <div id="redesSociales" align="center">
+            <p>Síguenos en nuestras redes sociales:</p>
+            <nav>
+                <a href="https://facebook.com" target="_blank"><img src="../imagenes/facebook.png" alt="Facebook" width="30"></a>
+                <a href="https://instagram.com" target="_blank"><img src="../imagenes/instagram.png" alt="Instagram" width="30"></a>
+                <a href="mailto:contacto@patitasfelices.com"><img src="../imagenes/email.png" alt="Email" width="30"></a>
+                <a href="https://wa.me/1234567890" target="_blank"><img src="../imagenes/whatsapp.png" alt="WhatsApp" width="30"></a>
+            </nav>
+        </div>
+        <br>
+        <p align="center"><small>&copy; 2026 Veterinaria Patitas Felices - Todos los derechos reservados.</small></p>
+    </footer>
 </body>
 
 </html>
